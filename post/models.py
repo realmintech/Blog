@@ -21,7 +21,10 @@ class Post(models.Model):
         try:
             url = self.image.url
         except ValueError:
-            url = "/media/d2.jpg"
+            url = ""
         return url
+        
+            
+
 
 
